@@ -1,0 +1,108 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(50px + 2vmin);
+  color: white;
+  background-image: url("./pictures/HouseOrd/HOUSEORDT013.jpg");
+  background-size: cover;
+  background-position: bottom;
+  font-weight: 600;
+}
+
+.aboutUs {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.infoRow {
+  align-items: center;
+}
+
+.headers {
+  font-size: calc(64px);
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  text-justify: inter-word;
+  text-align: start;
+  color: #9eb5cd;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110.023%; /* 59.412px */
+  letter-spacing: 25.86px;
+}
+
+.columnImage {
+  width: 75%;
+}
+
+.navBarBrand {
+  font-family: "Playfair Display", serif;
+}
+
+.paragraphs {
+  font-size: calc(18px);
+  font-weight: 300;
+  font-family: "Inter", sans-serif;
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 200%;
+}
+
+@media only screen and (max-width: 600px) {
+  .paragraphs {
+    font-size: calc(18px);
+    font-weight: 300;
+    font-family: "Inter", sans-serif;
+    text-align: start;
+    text-justify: inter-word;
+    line-height: 150%;
+  }
+}
+
+.landingContainer {
+  box-shadow: 13px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.merinda {
+  border-radius: 60px 0px 0px 60px;
+  width: 75%;
+}
+
+.ian {
+  border-radius: 0px 60px 60px 0px;
+  width: 75%;
+}
+
+.portraits {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.linkText {
+  text-orientation: sideways;
+  writing-mode: vertical-rl;
+}
