@@ -145,7 +145,6 @@
   align-content: center;
   margin: 1em;
   width: 100%;
-  height: 100vh;
 }
 
 .foreground p {
@@ -178,4 +177,37 @@
   margin: auto;
   display: inline-block;
   transform: scale(1, 5.5);
+}
+
+.rowCol {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  margin-left: 50px;
+}
+
+.alignEverythingCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  height: inherit;
+}
+
+.exploreP {
+  color: #000;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+
+  letter-spacing: 10px;
+  text-transform: uppercase;
+}
+
+.exploreRowCard {
+  width: 400px;
+  height: auto;
+  object-fit: cover;
 }
