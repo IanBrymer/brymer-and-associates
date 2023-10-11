@@ -6,6 +6,8 @@ const Work = React.lazy(() => import('./pages/Work'));
 const NewHouses = React.lazy(() => import('./pages/NewHouses'));
 const Alterations = React.lazy(() => import('./pages/Alterations'));
 const Commercial = React.lazy(() => import('./pages/Commercial'));
+const Educational = React.lazy(() => import('./pages/Educational'));
+const Small = React.lazy(() => import('./pages/Small'));
 const Router = () => {
   return (
     <Suspense>
@@ -15,6 +17,8 @@ const Router = () => {
         <Route path='/new-houses' Component={NewHouses}></Route>
         <Route path='/alterations' Component={Alterations}></Route>
         <Route path='/commercial' Component={Commercial}></Route>
+        <Route path='/eductional' Component={Educational}></Route>
+        <Route path='/small' Component={Small}></Route>
       </Routes>
     </Suspense>
   );

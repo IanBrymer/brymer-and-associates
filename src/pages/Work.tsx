@@ -10,20 +10,19 @@ const Work = () => {
                 {/* <header className="headerContainer">
             </header> */}
                 <div className='OtherPageheader'>
-                    <PageHeaders fontSize='30px' backgroundFontSize='120px' height='100vh' header='EXPLORE OUR WORK'></PageHeaders>
+                    <PageHeaders fontSize='30px' scaleOne='1' scaleTwo='5.5' backgroundFontSize='120px' height='100vh' backgroundHeader="EXPLORE OUR WORK" header='EXPLORE OUR WORK'></PageHeaders>
                 </div>
             </div>
-            <div className=''>
+            <div className='p-5'>
                 <Row className=''>
                     <Col className='rowCol'>
-                        <ExploreCards text='New Houses' immageSrc='NewHouses.png' to='/new-houses'></ExploreCards>
-                        <ExploreCards text='Alterations' immageSrc='Alterations.png' to='/alterations'></ExploreCards>
-                        <ExploreCards text='New Houses' immageSrc='NewHouses.png' to='/new-houses'></ExploreCards>
+                        <ExploreCards text='New Houses' paddingBottom='0px' paddingTop='25px' immageSrc='NewHouses.png' to='new-houses'></ExploreCards>
+                        <ExploreCards text='Alterations' paddingBottom='10px' paddingTop='0px' immageSrc='Alterations.png' to='/alterations'></ExploreCards>
+                        <ExploreCards text='Small' paddingBottom='0px' paddingTop='10px' immageSrc='Small.png' to='/small'></ExploreCards>
                     </Col>
                     <Col className='rowCol'>
-                        <ExploreCards text='Commercial' immageSrc='Commercial.png' to='/commercial'></ExploreCards>
-                        <ExploreCards text='Alterations' immageSrc='Alterations.png' to='/alterations'></ExploreCards>
-                        <ExploreCards text='New Houses' immageSrc='NewHouses.png' to='/new-houses'></ExploreCards>
+                        <ExploreCards text='Commercial' paddingBottom='0px' paddingTop='20px' immageSrc='Commercial.png' to='/commercial'></ExploreCards>
+                        <ExploreCards text='Educational' paddingBottom='0px' paddingTop='30px' immageSrc='Educational.png' to='/educational'></ExploreCards>
                     </Col>
                 </Row>
             </div>

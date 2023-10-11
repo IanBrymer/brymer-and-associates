@@ -17,7 +17,6 @@
 }
 
 .OtherPageheader {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -176,15 +175,11 @@
   text-align: center;
   margin: auto;
   display: inline-block;
-  transform: scale(1, 5.5);
 }
 
 .rowCol {
   display: flex;
   flex-direction: column;
-  align-items: start;
-  justify-content: center;
-  margin-left: 50px;
 }
 
 .alignEverythingCenter {
@@ -208,6 +203,8 @@
 
 .exploreRowCard {
   width: 400px;
-  height: auto;
-  object-fit: cover;
+}
+
+.houseCardRows {
+  min-width: max-content;
 }
