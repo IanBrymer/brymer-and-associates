@@ -10,6 +10,12 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+.linkText {
+  text-orientation: sideways;
+  writing-mode: vertical-rl;
+  z-index: 1;
+}
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -5164,7 +5170,9 @@ fieldset:disabled .btn {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+
   height: 100vh;
+  width: min-content;
 }
 .list-group-flush > .list-group-item {
   border-width: 0 0 var(--bs-list-group-border-width);

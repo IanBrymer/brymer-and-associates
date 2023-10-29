@@ -1,0 +1,50 @@
+import React from 'react'
+import TypesNavbar from '../../components/typesNavbar';
+import PageHeaders from '../../components/pageHeaders';
+import '../../App.css'
+import first from '../../pictures/NewHouses/PezulaHills/p2.png';
+import { Col, Row } from 'react-bootstrap';
+
+const PezulaHills = () => {
+    return (
+        <div className="App">
+            <div className='OtherPageheader'>
+                <TypesNavbar></TypesNavbar>
+                <PageHeaders fontSize='1.8rem' scaleOne='1.5rem' scaleTwo='2.5rem' backgroundFontSize='10rem' height='25vh' backgroundHeader="PEZULA HILLS" header='PEZULA HILLS'></PageHeaders>
+            </div>
+            <div className="full">
+                <img alt='p1' className='bigImages' src={require('../../pictures/NewHouses/PezulaHills/p1.jpg')}></img>
+            </div>
+            <div className="full">
+                <img alt='p2' className='bigImages' src={require('../../pictures/NewHouses/PezulaHills/p2.png')}></img>
+            </div>
+            <div className="full">
+                <Row className='threeRow'>
+                    <Col className='p-1'><img alt='p2' className='threeColumnImage' src={require('../../pictures/NewHouses/PezulaHills/p3.jpg')}></img></Col>
+                    <Col className='p-1'><img alt='p2' className='threeColumnImage' src={require('../../pictures/NewHouses/PezulaHills/p4.jpg')}></img></Col>
+                    <Col className='p-1'><img alt='p2' className='threeColumnImage' src={require('../../pictures/NewHouses/PezulaHills/p5.jpg')}></img></Col>
+                </Row>
+            </div>
+            <div className="full">
+                <Row className='twoRow'>
+                    <Col className='p-0'><img alt='p2' className='twoColumnImage' src={require('../../pictures/NewHouses/PezulaHills/p6.jpg')}></img></Col>
+                    <Col className='p-0'><img alt='p2' className='twoColumnImage' src={require('../../pictures/NewHouses/PezulaHills/p7.jpg')}></img></Col>
+                </Row>
+            </div>
+            <div className="full">
+                <Row className='twoRow'>
+                    <Col className='p-1'><img alt='p2' className='twoColumnImage' src={require('../../pictures/NewHouses/PezulaHills/p8.jpg')}></img></Col>
+                    <Col className='p-1'><img alt='p2' className='twoColumnImage' src={require('../../pictures/NewHouses/PezulaHills/p9.jpg')}></img></Col>
+                </Row>
+            </div>
+            <div className="full">
+                <img alt='p2' className='bigImages' src={require('../../pictures/NewHouses/PezulaHills/p10.jpg')}></img>
+            </div>
+            <div className="full">
+                <img alt='p2' className='bigImages' src={require('../../pictures/NewHouses/PezulaHills/p11.jpg')}></img>
+            </div>
+        </div>
+    )
+}
+
+export default PezulaHills;

@@ -9,9 +9,11 @@ function App() {
   const [modalShow, setModalShow] = React.useState<boolean>(false);
   return (
     <div>
-      <div className='App position-absolute end-0'><DefaultNavbar></DefaultNavbar></div>
+      <div className='App'><DefaultNavbar></DefaultNavbar></div>
       <Router></Router>
-      <Footer></Footer>
+      <div className='w-100'>
+        <Footer></Footer>
+      </div>
     </div>
   );
 }

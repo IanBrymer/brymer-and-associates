@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import '../App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import DefaultNavbar from '../components/navbar';
-import { Button } from 'react-bootstrap';
+import { Button, Nav } from 'react-bootstrap';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -11,17 +11,19 @@ import Col from 'react-bootstrap/Col';
 const Home = () => {
     return (
         <div className="App">
-            <header className="App-header">
-                {/* <img src={logo} className="App-logo" alt="logo" /> */}
-                <div className='landingContainer'>
-                    <p className='lndHead'>
-                        BRYMER&ASSOCIATES
-                    </p>
-                    <p className='HeadParagraphs'>
-                        A LANGUAGE OF LINES
-                    </p>
-                </div>
-            </header>
+            <div className="d-flex justify-content-center">
+                <header className="App-header">
+                    {/* <img src={logo} className="App-logo" alt="logo" /> */}
+                    <div className='landingContainer'>
+                        <p className='lndHead'>
+                            BRYMER&ASSOCIATES
+                        </p>
+                        <p className='HeadParagraphs'>
+                            A LANGUAGE OF LINES
+                        </p>
+                    </div>
+                </header>
+            </div>
             <div className='aboutUs pt-5'>
                 <Container>
                     <Row>
@@ -42,21 +44,28 @@ const Home = () => {
                     </Row>
                 </Container>
             </div>
-            <div className='aboutUs pt-5'>
+            <div className='aboutUs pt-5 w-100'>
                 <Container>
-                    <Row className='infoRow'>
-                        <Col className='headers'><img alt='Cool pictures' className='merinda' src={require('../pictures/HouseOrd/HOUSEORDT013.jpg')} /></Col>
-                        <Col><p className='paragraphs'>Merinda, who has a degree in architecture, is responsible for the initial client liaison, client brief and site analysis, project design, drawings and municipal and development submissions. Merinda has a holistic approach to design, with a strong emphasis on the client’s needs, paring these to the site and local environmental conditions. Design drawings, including numerous sections, are extensively detailed with a strong emphasis on interior design and finishing details. This allows builders to accurately price our drawings, deliver an excellent product and minimises costly on site changes to design.</p></Col>
+                    <Row className='pb-5'>
+                        <Col></Col>
+                        <Col className='headers'>WHO ARE WE</Col>
+                    </Row>
+                    <Row className=''>
+                        <Col className='paragraphPadding'><p className='paragraphs'><span style={{ fontWeight: 'bold' }}>Ian,</span> who has a BSc degree, is responsible for the architectural supervision and office management. Good management of the construction process is pivotal to delivering a superior end product. A close working relationship and constant communication between Ian, Merinda and the client facilitate the accurate portrayal of the architect’s and client’s vision to the construction management team. Details like choosing the right builders for the project, specifying the correct materials, managing the installation of the technical elements and minimising drawing interpretation errors all go a long way to delivering a great building that will be well used for many years. Strong emphasis is also placed on finishing details like landscaping, interior design and detailing, joinery and help with soft finishing. The quality of the construction team is a very important element, as many members of the team will develop long term relationships with the client.</p></Col>
+                        <Col className='headers portraitPadding d-flex justify-content-end'><img alt='Cool pictures' className='verticalPortraits' src={require('../pictures/HouseOrd/HOUSEORDT013 - Copy.jpg')} /></Col>
+                        <Col className='d-flex justify-content-start'><img alt='Cool pictures' className='verticalPortraits' src={require('../pictures/HouseOrd/HOUSEORDT013 - Copy.jpg')} /></Col>
+                        <Col className='portraitRows'><p className='paragraphs'><span style={{ fontWeight: 'bold' }}>Merinda,</span> who has a degree in architecture, is responsible for the initial client liaison, client brief and site analysis, project design, drawings and municipal and development submissions. Merinda has a holistic approach to design, with a strong emphasis on the client’s needs, paring these to the site and local environmental conditions. Design drawings, including numerous sections, are extensively detailed with a strong emphasis on interior design and finishing details. This allows builders to accurately price our drawings, deliver an excellent product and minimises costly on site changes to design.</p></Col>
                     </Row>
                 </Container>
             </div>
-            <div className='aboutUs pt-5'>
-                <Container>
-                    <Row className='infoRow'>
-                        <Col><p className='paragraphs'>Ian, who has a BSc degree, is responsible for the architectural supervision and office management. Good management of the construction process is pivotal to delivering a superior end product. A close working relationship and constant communication between Ian, Merinda and the client facilitate the accurate portrayal of the architect’s and client’s vision to the construction management team. Details like choosing the right builders for the project, specifying the correct materials, managing the installation of the technical elements and minimising drawing interpretation errors all go a long way to delivering a great building that will be well used for many years. Strong emphasis is also placed on finishing details like landscaping, interior design and detailing, joinery and help with soft finishing. The quality of the construction team is a very important element, as many members of the team will develop long term relationships with the client.</p></Col>
-                        <Col className='d-flex justify-content-end'><img alt='Cool pictures' className='ian' src={require('../pictures/HouseOrd/HOUSEORDT013.jpg')} /></Col>
-                    </Row>
-                </Container>
+            <div className='d-flex justify-content-around p-5'>
+                <Nav.Link className='exploreOurWorkButton' href="/our-work">
+                    <div className="buttonContainer">
+                        <div className="inner">
+                            EXPLORE OUR WORK
+                        </div>
+                    </div>
+                </Nav.Link>
             </div>
         </div>
     );

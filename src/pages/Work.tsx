@@ -3,14 +3,14 @@ import '../App.css'
 import PageHeaders from '../components/pageHeaders';
 import ExploreCards from '../components/exploreCards';
 import { Col, Row } from 'react-bootstrap';
+import TypesNavbar from '../components/typesNavbar';
 const Work = () => {
     return (
         <>
             <div className="App">
-                {/* <header className="headerContainer">
-            </header> */}
                 <div className='OtherPageheader'>
-                    <PageHeaders fontSize='30px' scaleOne='1' scaleTwo='5.5' backgroundFontSize='120px' height='100vh' backgroundHeader="EXPLORE OUR WORK" header='EXPLORE OUR WORK'></PageHeaders>
+                    <TypesNavbar></TypesNavbar>
+                    <PageHeaders fontSize='30px' scaleOne='1' scaleTwo='5.5' backgroundFontSize='120px' height='80vh' backgroundHeader="EXPLORE OUR WORK" header='EXPLORE OUR WORK'></PageHeaders>
                 </div>
             </div>
             <div className='p-5'>

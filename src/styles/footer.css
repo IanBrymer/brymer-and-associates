@@ -1,21 +1,73 @@
 .footerBody {
-  height: 50vh;
-  background-color: #c5d2e1;
+  height: 33vh;
+  background-image: url("../pictures//HouseOrd/HOUSEORDT013.jpg");
+  filter: blur(500px);
+  -webkit-filter: blur(6px);
+  background-size: 95%;
+  background-position: left;
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  max-width: 99%;
+  border-radius: 1px 1px 1px 1px;
+}
+
+.footerWritingContainer {
+  display: flex;
+  justify-content: center;
 }
 
 .backwardImage {
-  -moz-transform: scale(1, -1);
-  -webkit-transform: scale(1, -1);
-  -o-transform: scale(1, -1);
-  -ms-transform: scale(1, -1);
-  transform: scale(1, -1);
-  width: 580.59px;
-  height: 99.307px;
+  z-index: -20;
 }
 
 .menu {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 50px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .footerWritingContainer {
+    display: block;
+    justify-content: center;
+  }
+
+  .footerBody {
+    height: 40%;
+    background-image: url("../pictures//HouseOrd/HOUSEORDT013.jpg");
+    filter: blur(500px);
+    -webkit-filter: blur(6px);
+    background-size: cover;
+    background-position: left;
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    max-width: 99%;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 0px;
+    width: 100%;
+  }
+
+  .backwardImage {
+    z-index: -20;
+    width: 100%;
+  }
+}
+
+.menu .menu :hover {
+  background-color: #e5e5e5;
 }

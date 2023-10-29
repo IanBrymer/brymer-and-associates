@@ -1,5 +1,5 @@
 import React from 'react'
-import '../App.css';
+import '../styles/navbar.css';
 
 const PageHeaders = (props: { height: string, header: string, backgroundHeader: string, fontSize: string, backgroundFontSize: string, scaleOne: string, scaleTwo: string }) => {
     return (
