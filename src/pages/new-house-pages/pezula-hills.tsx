@@ -4,10 +4,12 @@ import PageHeaders from '../../components/pageHeaders';
 import '../../App.css'
 import first from '../../pictures/NewHouses/PezulaHills/p2.png';
 import { Col, Row } from 'react-bootstrap';
+import BackTo from '../../components/backTo';
 
 const PezulaHills = () => {
     return (
         <div className="App">
+            <BackTo text='Back To New Houses' link='/new-houses'></BackTo>
             <div className='OtherPageheader'>
                 <TypesNavbar></TypesNavbar>
                 <PageHeaders fontSize='1.8rem' scaleOne='1.5rem' scaleTwo='2.5rem' backgroundFontSize='10rem' height='25vh' backgroundHeader="PEZULA HILLS" header='PEZULA HILLS'></PageHeaders>
@@ -27,8 +29,8 @@ const PezulaHills = () => {
             </div>
             <div className="full">
                 <Row className='twoRow'>
-                    <Col className='p-0'><img alt='p2' className='twoColumnImage' src={require('../../pictures/NewHouses/PezulaHills/p6.jpg')}></img></Col>
-                    <Col className='p-0'><img alt='p2' className='twoColumnImage' src={require('../../pictures/NewHouses/PezulaHills/p7.jpg')}></img></Col>
+                    <Col className='p-1'><img alt='p2' className='twoColumnImage' src={require('../../pictures/NewHouses/PezulaHills/p6.jpg')}></img></Col>
+                    <Col className='p-1'><img alt='p2' className='twoColumnImage' src={require('../../pictures/NewHouses/PezulaHills/p7.jpg')}></img></Col>
                 </Row>
             </div>
             <div className="full">
