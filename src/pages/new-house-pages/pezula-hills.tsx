@@ -2,7 +2,6 @@ import React from 'react'
 import TypesNavbar from '../../components/typesNavbar';
 import PageHeaders from '../../components/pageHeaders';
 import '../../App.css'
-import first from '../../pictures/NewHouses/PezulaHills/p2.png';
 import { Col, Row } from 'react-bootstrap';
 import BackTo from '../../components/backTo';
 
@@ -44,6 +43,12 @@ const PezulaHills = () => {
             </div>
             <div className="full">
                 <img alt='p2' className='bigImages' src={require('../../pictures/NewHouses/PezulaHills/p11.jpg')}></img>
+            </div>
+            <div className="full">
+                <Row className='twoRow'>
+                    <Col className='p-1'><img alt='p2' className='twoColumnImage' src={require('../../pictures/NewHouses/PezulaHills/p12.png')}></img></Col>
+                    <Col className='p-1'><img alt='p2' className='twoColumnImage' src={require('../../pictures/NewHouses/PezulaHills/p13.png')}></img></Col>
+                </Row>
             </div>
         </div>
     )

@@ -6,7 +6,6 @@ import Footer from './components/footer';
 
 
 function App() {
-  const [modalShow, setModalShow] = React.useState<boolean>(false);
   return (
     <div>
       <div className='App'><DefaultNavbar></DefaultNavbar></div>

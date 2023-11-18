@@ -95,7 +95,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  padding: 10px;
+  padding-bottom: 10px;
 }
 
 .bigImages {
@@ -109,17 +109,36 @@
 }
 
 .twoRow {
-  max-width: 100%;
-  height: auto;
+  width: 100%; /* Make the images take up the full width of the column */
+  height: 100%; /* Set the height to take up the full height of the column */
+  object-fit: contain;
 }
 
 .twoColumnImage {
   width: 100%;
+  height: 100%;
+}
+
+.tpr-1 {
+  padding-right: 10px;
+}
+
+.tpl-1 {
+  padding-left: 10px;
 }
 
 .threeColumnImage {
   width: 100%;
   height: auto;
+}
+
+.pr-1 {
+}
+
+.mid-1 {
+}
+
+.pl-1 {
 }
 
 @media only screen and (max-width: 600px) {
@@ -130,6 +149,44 @@
     text-align: start;
     text-justify: inter-word;
     line-height: 150%;
+  }
+  .tpr-1 {
+    padding-right: 0px;
+    padding-bottom: 5px;
+  }
+
+  .tpl-1 {
+    padding-right: 0px;
+    padding-top: 5px;
+  }
+
+  .pr-1 {
+    padding-right: 0;
+    padding-bottom: 5px;
+  }
+
+  .mid-1 {
+    padding: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .pl-1 {
+    padding-right: 0;
+    padding-top: 5px;
+  }
+
+  .full {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+  }
+
+  .bigImages {
+    width: 100%;
+    height: auto;
+    padding: 0;
   }
 }
 
