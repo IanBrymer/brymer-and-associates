@@ -2,16 +2,18 @@ import React from 'react';
 import logo from './logo.svg';
 import '../App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import DefaultNavbar from '../components/navbar';
+
 import { Nav } from 'react-bootstrap';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Footer from '../components/footer';
+import DefaultNavbar from '../components/navbar';
 
 const Home = () => {
     return (
         <div className="App">
-            {/* <DefaultNavbar></DefaultNavbar> */}
+            <DefaultNavbar></DefaultNavbar>
             <div className="d-flex justify-content-center">
                 <header className="App-header">
                     {/* <img src={logo} className="App-logo" alt="logo" /> */}
@@ -68,6 +70,7 @@ const Home = () => {
                     </div>
                 </Nav.Link>
             </div>
+            <Footer></Footer>
         </div>
     );
 }
