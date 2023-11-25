@@ -1,1 +1,0 @@
-{"version":3,"file":"static/js/399.2887e513.chunk.js","mappings":"6IAUA,UARoB,WAChB,OACIA,EAAAA,EAAAA,KAAA,SAIR,C","sources":["pages/Educational.tsx"],"sourcesContent":["import React from 'react';\r\n\r\nconst Educational = () => {\r\n    return (\r\n        <div>\r\n\r\n        </div>\r\n    );\r\n}\r\n\r\nexport default Educational;"],"names":["_jsx"],"sourceRoot":""}

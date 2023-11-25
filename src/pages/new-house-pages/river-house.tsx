@@ -14,7 +14,6 @@ const RiverHouse = () => {
                     <TypesNavbar></TypesNavbar>
                     <PageHeaders fontSize='1.8rem' scaleOne='1.5rem' scaleTwo='2.5rem' backgroundFontSize='10rem' height='25vh' backgroundHeader="RIVER HOUSE" header='RIVER HOUSE'></PageHeaders>
                 </div>
-
                 <div className="container">
                     <div className="full">
                         <img alt='p1' className='bigImages' src={require('../../pictures/NewHouses/RiverHouse/1.jpg')}></img>
@@ -46,22 +45,6 @@ const RiverHouse = () => {
                     </div>
                     <br></br>
                 </div>
-                {/* <div className="full">
-                <Row className='twoRow'>
-                    <Col className='p-1'><img alt='p2' className='twoColumnImage' src={require('../../pictures/NewHouses/RiverHouse/5.jpg')}></img></Col>
-                    <Col className='p-1'><img alt='p2' className='twoColumnImage' src={require('../../pictures/NewHouses/RiverHouse/6.jpg')}></img></Col>
-                </Row>
-            </div>
-            <div className="full">
-                <Row className='threeRow'>
-                    <Col className='p-1'><img alt='p2' className='threeColumnImage' src={require('../../pictures/NewHouses/RiverHouse/7.jpg')}></img></Col>
-                    <Col className='p-1'><img alt='p2' className='threeColumnImage' src={require('../../pictures/NewHouses/RiverHouse/8.jpg')}></img></Col>
-                    <Col className='p-1'><img alt='p2' className='threeColumnImage' src={require('../../pictures/NewHouses/RiverHouse/9.jpg')}></img></Col>
-                </Row>
-            </div>
-            <div className="full">
-                <img alt='p2' className='bigImages' src={require('../../pictures/NewHouses/RiverHouse/10.png')}></img>
-            </div> */}
             </div>
         </div>
     )
