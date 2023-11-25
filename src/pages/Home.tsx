@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
-import '../App.css';
+import '../styles/Home.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { Nav } from 'react-bootstrap';
@@ -19,7 +19,7 @@ const Home = () => {
                     {/* <img src={logo} className="App-logo" alt="logo" /> */}
                     <div className='landingContainer'>
                         <p className='lndHead'>
-                            BRYMER&ASSOCIATES
+                            BRYMER&ASSOCIATESssss
                         </p>
                         <p className='HeadParagraphs'>
                             A LANGUAGE OF LINES
@@ -70,7 +70,7 @@ const Home = () => {
                     </div>
                 </Nav.Link>
             </div>
-            <Footer></Footer>
+
         </div>
     );
 }

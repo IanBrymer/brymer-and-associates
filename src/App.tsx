@@ -11,6 +11,7 @@ function App() {
 
       <div className='App'>
         <Router></Router>
+        <Footer></Footer>
       </div>
 
     </>
