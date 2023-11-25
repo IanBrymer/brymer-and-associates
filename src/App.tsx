@@ -7,13 +7,16 @@ import Footer from './components/footer';
 
 function App() {
   return (
-    <div>
-      <div className='App'><DefaultNavbar></DefaultNavbar></div>
-      <Router></Router>
-      <div className='w-100'>
-        <Footer></Footer>
+    <>
+      <div>
+        <div className='body'></div>
+        <Router></Router>
       </div>
-    </div>
+      <div className='d-block'>
+
+      </div>
+    </>
+
   );
 }
 

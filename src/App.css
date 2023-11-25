@@ -1,6 +1,19 @@
 .App {
   text-align: center;
-  max-width: 100vw;
+  max-width: 1500px;
+  width: 100%;
+}
+
+.myContainer {
+  display: block;
+}
+
+.riverHouseWide {
+  width: 66%;
+}
+
+.riverHouseNarrow {
+  width: 33%;
 }
 
 .App-header {
@@ -141,6 +154,37 @@
 .pl-1 {
 }
 
+@media only screen and (max-width: 1280px) {
+  .riverHouseWide {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-right: 0px;
+    padding-bottom: 5px;
+  }
+
+  .imgForRiverHouse {
+    width: 50%;
+    height: auto;
+  }
+
+  .riverHouseNarrow {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    padding-right: 0px;
+    padding-top: 5px;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .imgForRiverHouse {
+    width: 100%;
+    height: auto;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .paragraphs {
     font-size: calc(18px);
@@ -150,6 +194,11 @@
     text-justify: inter-word;
     line-height: 150%;
   }
+  .imgForRiverHouse {
+    width: 100%;
+    height: auto;
+  }
+
   .tpr-1 {
     padding-right: 0px;
     padding-bottom: 5px;
@@ -187,6 +236,18 @@
     width: 100%;
     height: auto;
     padding: 0;
+  }
+
+  .riverHouseWide {
+    width: 100%;
+    padding-right: 0px;
+    padding-bottom: 5px;
+  }
+
+  .riverHouseNarrow {
+    width: 100%;
+    padding-right: 0px;
+    padding-top: 5px;
   }
 }
 

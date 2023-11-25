@@ -5,16 +5,25 @@ import { Col, Nav, Row } from 'react-bootstrap';
 const Footer = () => {
     return (
         <>
-            <div className='footerBody'>
-            </div>
-            <div className='footerWritingContainer'>
-                <Col className='Backwards'><img className='p-5 backwardImage' src={require("../pictures/footer/BRYMER & ASSOCIATES.png")}></img></Col>
-                <Col className='menu'>
-                    <Nav.Link href='/'>HOME</Nav.Link>
-                    <Nav.Link href="/our-work">OUR WORK</Nav.Link>
-                    <Nav.Link href="/contact-us">CONTACT US</Nav.Link>
+            <Row className='footerContainer'>
+                <Col className='basContainer' style={{ backgroundColor: '#E4ECF5' }}>
+                    <div className='bas'>Brymer &<br></br>Associates</div>
                 </Col>
-            </div>
+                <Col className='menu' style={{ backgroundColor: '#C5D2E1' }}>
+                    <div className='menuContainer'>
+                        <div className='column'>
+                            <Nav.Link href='/'>HOME</Nav.Link>
+                            <Nav.Link href="/our-work">OUR WORK</Nav.Link>
+                            <Nav.Link href="/our-work">OUR WORK</Nav.Link>
+                        </div>
+                        <div className='column'>
+                            <Nav.Link href='/'>HOME</Nav.Link>
+                            <Nav.Link href="/our-work">OUR WORK</Nav.Link>
+                            <Nav.Link href="/contact-us">CONTACT US</Nav.Link>
+                        </div>
+                    </div>
+                </Col>
+            </Row >
         </>
     );
 }

@@ -8,34 +8,60 @@ import BackTo from '../../components/backTo';
 const RiverHouse = () => {
     return (
         <div className="App">
-            <BackTo text='Back To New Houses' link='/new-houses'></BackTo>
-            <div className='OtherPageheader'>
-                <TypesNavbar></TypesNavbar>
-                <PageHeaders fontSize='1.8rem' scaleOne='1.5rem' scaleTwo='2.5rem' backgroundFontSize='10rem' height='25vh' backgroundHeader="RIVER HOUSE" header='RIVER HOUSE'></PageHeaders>
-            </div>
-            <div className="full">
-                <img alt='p1' className='bigImages' src={require('../../pictures/NewHouses/PezulaFynbos/1.jpg')}></img>
-            </div>
-            <div className="full">
-                <img alt='p2' className='bigImages' src={require('../../pictures/NewHouses/PezulaFynbos/2.png')}></img>
-            </div>
-            <div className="full">
+            <div className="myContainer">
+                <BackTo text='Back To New Houses' link='/new-houses'></BackTo>
+                <div className='OtherPageheader'>
+                    <TypesNavbar></TypesNavbar>
+                    <PageHeaders fontSize='1.8rem' scaleOne='1.5rem' scaleTwo='2.5rem' backgroundFontSize='10rem' height='25vh' backgroundHeader="RIVER HOUSE" header='RIVER HOUSE'></PageHeaders>
+                </div>
+
+                <div className="container">
+                    <div className="full">
+                        <img alt='p1' className='bigImages' src={require('../../pictures/NewHouses/RiverHouse/1.jpg')}></img>
+                    </div>
+                    <div className="full">
+                        <img alt='p2' className='bigImages' src={require('../../pictures/NewHouses/RiverHouse/2.png')}></img>
+                    </div>
+                    <div className="full">
+                        <Row>
+                            <Col xs={12} md={6} className='tpr-1'><img alt='p2' className='twoColumnImage' src={require('../../pictures/NewHouses/RiverHouse/3.jpg')}></img></Col>
+                            <Col xs={12} md={6} className='tpl-1'><img alt='p2' className='twoColumnImage' src={require('../../pictures/NewHouses/RiverHouse/4.jpg')}></img></Col>
+                        </Row>
+                    </div>
+                    <div className="full">
+                        <Row>
+                            <Col xs={12} md={6} className='tpr-1 riverHouseWide'><img alt='p2' className='twoColumnImage imgForRiverHouse' src={require('../../pictures/NewHouses/RiverHouse/5.jpg')}></img></Col>
+                            <Col xs={12} md={6} className='tpl-1 riverHouseNarrow'><img alt='p2' className='twoColumnImage imgForRiverHouse' src={require('../../pictures/NewHouses/RiverHouse/6.jpg')}></img></Col>
+                        </Row>
+                    </div>
+                    <div className="full">
+                        <Row>
+                            <Col xs={12} md={4} className='pr-1'><img alt='p2' className='threeColumnImage' src={require('../../pictures/NewHouses/RiverHouse/7.jpg')}></img></Col>
+                            <Col xs={12} md={4} className='mid-1'><img alt='p2' className='threeColumnImage' src={require('../../pictures/NewHouses/RiverHouse/8.jpg')}></img></Col>
+                            <Col xs={12} md={4} className='pl-1'><img alt='p2' className='threeColumnImage' src={require('../../pictures/NewHouses/RiverHouse/9.jpg')}></img></Col>
+                        </Row>
+                    </div>
+                    <div className="full">
+                        <img alt='p2' className='bigImages' src={require('../../pictures/NewHouses/RiverHouse/2.png')}></img>
+                    </div>
+                    <br></br>
+                </div>
+                {/* <div className="full">
                 <Row className='twoRow'>
-                    <Col className='p-1'><img alt='p2' className='twoColumnImage' src={require('../../pictures/NewHouses/PezulaFynbos/3.jpg')}></img></Col>
-                    <Col className='p-1'><img alt='p2' className='twoColumnImage' src={require('../../pictures/NewHouses/PezulaFynbos/4.jpg')}></img></Col>
+                    <Col className='p-1'><img alt='p2' className='twoColumnImage' src={require('../../pictures/NewHouses/RiverHouse/5.jpg')}></img></Col>
+                    <Col className='p-1'><img alt='p2' className='twoColumnImage' src={require('../../pictures/NewHouses/RiverHouse/6.jpg')}></img></Col>
                 </Row>
             </div>
             <div className="full">
-                <img alt='p2' className='bigImages' src={require('../../pictures/NewHouses/PezulaFynbos/5.jpg')}></img>
-            </div>
-            <div className="full">
-                <Row className='twoRow'>
-                    <Col className='p-1'><img alt='p2' className='twoColumnImage' src={require('../../pictures/NewHouses/PezulaFynbos/6.jpg')}></img></Col>
-                    <Col className='p-1'><img alt='p2' className='twoColumnImage' src={require('../../pictures/NewHouses/PezulaFynbos/7.png')}></img></Col>
+                <Row className='threeRow'>
+                    <Col className='p-1'><img alt='p2' className='threeColumnImage' src={require('../../pictures/NewHouses/RiverHouse/7.jpg')}></img></Col>
+                    <Col className='p-1'><img alt='p2' className='threeColumnImage' src={require('../../pictures/NewHouses/RiverHouse/8.jpg')}></img></Col>
+                    <Col className='p-1'><img alt='p2' className='threeColumnImage' src={require('../../pictures/NewHouses/RiverHouse/9.jpg')}></img></Col>
                 </Row>
             </div>
             <div className="full">
-                <img alt='p2' className='bigImages' src={require('../../pictures/NewHouses/PezulaFynbos/8.png')}></img>
+                <img alt='p2' className='bigImages' src={require('../../pictures/NewHouses/RiverHouse/10.png')}></img>
+            </div> */}
             </div>
         </div>
     )

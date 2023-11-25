@@ -1,0 +1,10 @@
+body {
+  max-width: 100%;
+  justify-content: center;
+  display: flex;
+}
+
+#root {
+  max-width: 1500px;
+  width: 100%;
+}
