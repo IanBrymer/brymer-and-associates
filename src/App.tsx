@@ -11,10 +11,9 @@ function App() {
       <div>
         <div className='body'></div>
         <Router></Router>
+        <Footer></Footer>
       </div>
-      <div className='d-block'>
 
-      </div>
     </>
 
   );

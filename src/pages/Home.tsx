@@ -11,7 +11,7 @@ import Col from 'react-bootstrap/Col';
 const Home = () => {
     return (
         <div className="App">
-            <DefaultNavbar></DefaultNavbar>
+            {/* <DefaultNavbar></DefaultNavbar> */}
             <div className="d-flex justify-content-center">
                 <header className="App-header">
                     {/* <img src={logo} className="App-logo" alt="logo" /> */}
