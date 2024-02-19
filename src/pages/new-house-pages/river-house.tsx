@@ -41,7 +41,7 @@ const RiverHouse = () => {
                         </Row>
                     </div>
                     <div className="full">
-                        <img alt='p2' className='bigImages' src={require('../../pictures/NewHouses/RiverHouse/2.png')}></img>
+                        <img alt='p2' className='bigImages' src={require('../../pictures/NewHouses/RiverHouse/10.png')}></img>
                     </div>
                     <br></br>
                 </div>

@@ -73,6 +73,23 @@ const NewHouses = () => {
                         </Nav.Link>
                     </Col>
                 </Row>
+                <Row className='w-100 d-flex justify-content-around'>
+                    <Col>
+                        <Nav.Link href='/new-houses/pezulaCliffs'>
+                            <HouseCards paddingTop='10px' imageSrc='HouseCards/PezulaCliffs.jpg' houseName='Pezula Cliffs' paragraph='Large spacious plantation style house with views over the Pezula cliffs to the Indian ocean. Living areas opening up onto a large central court yard to allow air flow though the spaces, as well as for a weather protected outdoor area.'></HouseCards>
+                        </Nav.Link>
+                    </Col>
+                    <Col>
+                        <Nav.Link href='/new-houses/pezula-hills'>
+                            <HouseCards paddingTop='25px' imageSrc='HouseCards/PezulaHills.jpg' houseName='Easter Views' paragraph='An organic contemporary design with natural stone, timber and steel elements. Numerous verandas and decks were incorporated in the design to take advantage of the 270 degree views.'></HouseCards>
+                        </Nav.Link>
+                    </Col>
+                    <Col>
+                        <Nav.Link href='/new-houses/pezula-fynbos'>
+                            <HouseCards paddingTop='0px' imageSrc='HouseCards/PezulaFynbos.JPG' houseName='Pezula Fynbos' paragraph='A contemporary farm house design based on classical principles with West facing views. Wooden shutters, deep verandas and a central courtyard have been incorporated into the design to minimise late afternoon glare.'></HouseCards>
+                        </Nav.Link>
+                    </Col>
+                </Row>
             </div>
         </>
     );

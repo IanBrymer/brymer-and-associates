@@ -17,6 +17,7 @@ const SomersetHouse = React.lazy(() => import('./pages/new-house-pages/somerset-
 const Swartvlei = React.lazy(() => import('./pages/new-house-pages/swartvlei'));
 const Townsend = React.lazy(() => import('./pages/new-house-pages/townsend'));
 const WesternHead = React.lazy(() => import('./pages/new-house-pages/western-head'));
+const PezulaCliffs = React.lazy(() => import('./pages/new-house-pages/pezulaCliffs'));
 const Router = () => {
   return (
     <Suspense>
@@ -37,6 +38,7 @@ const Router = () => {
         <Route path='/new-houses/swartvlei' Component={Swartvlei}></Route>
         <Route path='/new-houses/townsend' Component={Townsend}></Route>
         <Route path='/new-houses/western-head' Component={WesternHead}></Route>
+        <Route path='/new-houses/pezulaCliffs' Component={PezulaCliffs}></Route>
       </Routes>
     </Suspense>
   );

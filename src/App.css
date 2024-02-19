@@ -72,8 +72,45 @@
 }
 
 .bigImages {
-  width: fit-content;
-  max-width: 100%;
+  width: 100%;
+  max-width: 1440px;
+}
+
+.image-box {
+    position: relative;
+    width: 100%;
+    padding-top: calc(100% * (100 / 250));
+    align-items: center;
+    display: flex;
+    padding-bottom: 0;
+}
+
+.image-cropped-calc {
+    position:absolute;
+    top: 0;
+    bottom: 15px;
+    width: 100%;
+    height: -webkit-fill-available;
+    object-fit: cover;
+    max-width: 1440px;
+}
+
+.vertical-box {
+    position: relative;
+    width: 100%;
+    padding-top: calc(100% * (100 / 200));
+    align-items: center;
+    display: flex;
+    padding-bottom: 0;
+}
+
+.vertical-cropped-calc {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: -webkit-fill-available;
+    object-fit: cover;
+    max-width: 1440px;
 }
 
 .threeRow {
@@ -321,3 +358,4 @@
   height: 700px;
   width: 280px;
 }
+

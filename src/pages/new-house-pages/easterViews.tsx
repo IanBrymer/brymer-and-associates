@@ -1,0 +1,66 @@
+import React from 'react'
+import TypesNavbar from '../../components/typesNavbar';
+import PageHeaders from '../../components/pageHeaders';
+import '../../App.css'
+import { Col, Row } from 'react-bootstrap';
+import BackTo from '../../components/backTo';
+
+const EasternVIews = () => {
+    return (
+        <div className="App">
+            <BackTo text='Back To New Houses' link='/new-houses'></BackTo>
+            <div className='OtherPageheader'>
+                <TypesNavbar></TypesNavbar>
+                <PageHeaders fontSize='5vw' scaleOne='1.5' scaleTwo='2.5' backgroundFontSize='7.5vw' height='19vw' backgroundHeader="WESTERN HEAD" header='WESTERN HEAD'></PageHeaders>
+            </div>
+            <div className="container">
+                <div className="full">
+                    <img alt='p1' className='bigImages' src={require('../../pictures/NewHouses/EasternVIews/1.jpg')}></img>
+                </div>
+                <div className="full">
+                    <img alt='p2' className='bigImages' src={require('../../pictures/NewHouses/EasternVIews/2.png')}></img>
+                </div>
+                <div className="full">
+                    <Row>
+                        <Col xs={12} md={6} className='tpr-1'><img alt='p2' className='twoColumnImage' src={require('../../pictures/NewHouses/EasternVIews/3.jpg')}></img></Col>
+                        <Col xs={12} md={6} className='tpl-1'><img alt='p2' className='twoColumnImage' src={require('../../pictures/NewHouses/EasternVIews/4.jpg')}></img></Col>
+                    </Row>
+                </div>
+                <div className="full">
+                    <Row>
+                        <Col xs={12} md={6} className='tpr-1' style={{ width: '66%', height: 'auto' }} >
+                            <img alt='p2' className='twoColumnImage' src={require('../../pictures/NewHouses/EasternVIews/5.jpg')} />
+                        </Col>
+                        <Col xs={12} md={6} style={{ width: '34%,', height: 'auto' }} className='tpl-1'>
+                            <img alt='p2' className='twoColumnImage' style={{ display: 'flex', right: 0 }} src={require('../../pictures/NewHouses/EasternVIews/13.jpg')} />
+                        </Col>
+                    </Row>
+                </div>
+                <div className="full">
+                    <img alt='p2' className='bigImages' src={require('../../pictures/NewHouses/EasternVIews/6.jpg')}></img>
+                </div>
+                <div className="full">
+                    <Row className='d-flex'>
+                        <div className="w-50">
+                            <Col xs={12} md={4} style={{ width: '100%', paddingBottom: '10px' }}><img alt='p2' style={{ width: '100%' }} src={require('../../pictures/NewHouses/EasternVIews/7.jpg')}></img></Col>
+                            <Col xs={12} md={4} style={{ width: '100%', paddingTop: '10px' }}><img alt='p2' style={{ width: '100%' }} src={require('../../pictures/NewHouses/EasternVIews/8.jpg')}></img></Col>
+                        </div>
+                        <Col xs={12} md={4} className='w-50'><img alt='p2' className='threeColumnImage' src={require('../../pictures/NewHouses/EasternVIews/9.jpg')}></img></Col>
+                    </Row>
+                </div>
+                <div className="full">
+                    <img alt='p2' className='bigImages' src={require('../../pictures/NewHouses/EasternVIews/11.png')}></img>
+                </div>
+                <div className="full">
+                    <Row>
+                        <Col xs={12} md={6} className='tpr-1'><img alt='p2' className='twoColumnImage' src={require('../../pictures/NewHouses/EasternVIews/11.png')}></img></Col>
+                        <Col xs={12} md={6} className='tpl-1'><img alt='p2' className='twoColumnImage' src={require('../../pictures/NewHouses/EasternVIews/12.png')}></img></Col>
+                    </Row>
+                </div>
+                <br></br>
+            </div>
+        </div>
+    )
+}
+
+export default EasternVIews;
