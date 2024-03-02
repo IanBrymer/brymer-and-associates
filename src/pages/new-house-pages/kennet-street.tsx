@@ -18,7 +18,7 @@ const KennetStreet = () => {
                     <img alt='p1' style={{ width: '100%' }} src={require('../../pictures/NewHouses/KennetStreet/1.jpg')}></img>
                 </div>
                 <div className="full">
-                    <img alt='p2' className='bigImages' src={require('../../pictures/NewHouses/KennetStreet/2.png')}></img>
+                    <img alt='p2' className='plans' src={require('../../pictures/NewHouses/KennetStreet/2.png')}></img>
                 </div>
                 <div className="full">
                     <Row className='twoRow'>
@@ -39,7 +39,7 @@ const KennetStreet = () => {
                     </Row>
                 </div>
                 <div className="full">
-                    <img alt='p2' className='bigImages' src={require('../../pictures/NewHouses/KennetStreet/9.png')}></img>
+                    <img alt='p2' className='plans' src={require('../../pictures/NewHouses/KennetStreet/9.png')}></img>
                 </div>
             </div>
         </div>

@@ -17,10 +17,10 @@ const Swartvlei = () => {
                 <img alt='p1' style={{ width: '100%' }} src={require('../../pictures/NewHouses/Swartvleihouse/1.jpg')}></img>
             </div>
             <div className="full">
-                <img alt='p2' className='bigImages' src={require('../../pictures/NewHouses/Swartvleihouse/2.png')}></img>
+                <img alt='p2' className='plans' src={require('../../pictures/NewHouses/Swartvleihouse/2.png')}></img>
             </div>
             <div className="full">
-                <img alt='p2' className='bigImages' src={require('../../pictures/NewHouses/Swartvleihouse/3.png')}></img>
+                <img alt='p2' className='plans' src={require('../../pictures/NewHouses/Swartvleihouse/3.png')}></img>
             </div>
             <div className="full">
                 <Row className='twoRow'>
@@ -41,10 +41,10 @@ const Swartvlei = () => {
                 <img alt='p2' style={{ width: '100%' }} src={require('../../pictures/NewHouses/Swartvleihouse/9.jpg')}></img>
             </div>
             <div className="full">
-                <img alt='p2' className='bigImages' src={require('../../pictures/NewHouses/Swartvleihouse/10.png')}></img>
+                <img alt='p2' className='plans' src={require('../../pictures/NewHouses/Swartvleihouse/10.png')}></img>
             </div>
             <div className="full">
-                <img alt='p2' className='bigImages' src={require('../../pictures/NewHouses/Swartvleihouse/11.png')}></img>
+                <img alt='p2' className='plans' src={require('../../pictures/NewHouses/Swartvleihouse/11.png')}></img>
             </div>
         </div>
     )

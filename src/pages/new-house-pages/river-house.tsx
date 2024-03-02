@@ -19,7 +19,7 @@ const RiverHouse = () => {
                         <img alt='p1' className='bigImages' src={require('../../pictures/NewHouses/RiverHouse/1.jpg')}></img>
                     </div>
                     <div className="full">
-                        <img alt='p2' className='bigImages' src={require('../../pictures/NewHouses/RiverHouse/2.png')}></img>
+                        <img alt='p2' className='plans' src={require('../../pictures/NewHouses/RiverHouse/2.png')}></img>
                     </div>
                     <div className="full">
                         <Row>
@@ -41,7 +41,7 @@ const RiverHouse = () => {
                         </Row>
                     </div>
                     <div className="full">
-                        <img alt='p2' className='bigImages' src={require('../../pictures/NewHouses/RiverHouse/10.png')}></img>
+                        <img alt='p2' className='plans' src={require('../../pictures/NewHouses/RiverHouse/10.png')}></img>
                     </div>
                     <br></br>
                 </div>

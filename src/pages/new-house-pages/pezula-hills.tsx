@@ -17,7 +17,7 @@ const PezulaHills = () => {
                 <img alt='p1' className='bigImages' src={require('../../pictures/NewHouses/PezulaHills/p1.jpg')}></img>
             </div>
             <div className="full">
-                <img alt='p2' className='bigImages' src={require('../../pictures/NewHouses/PezulaHills/p2.png')}></img>
+                <img alt='p2' className='plans' src={require('../../pictures/NewHouses/PezulaHills/p2.png')}></img>
             </div>
             <div className="full">
                 <Row className='threeRow'>

@@ -18,7 +18,7 @@ const Gradient = () => {
                     <img alt='p1' className='bigImages' src={require('../../pictures/NewHouses/Gradient/1.jpg')}></img>
                 </div>
                 <div className="full">
-                    <img alt='p2' className='bigImages' src={require('../../pictures/NewHouses/Gradient/2.png')}></img>
+                    <img alt='p2' className='plans' src={require('../../pictures/NewHouses/Gradient/2.png')}></img>
                 </div>
                 <div className="full">
                     <Row>

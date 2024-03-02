@@ -18,7 +18,7 @@ const Westernhead = () => {
                     <img alt='p1' className='bigImages' src={require('../../pictures/NewHouses/Westernhead/1.jpg')}></img>
                 </div>
                 <div className="full">
-                    <img alt='p2' className='bigImages' src={require('../../pictures/NewHouses/Westernhead/2.png')}></img>
+                    <img alt='p2' className='plans' src={require('../../pictures/NewHouses/Westernhead/2.png')}></img>
                 </div>
                 <div className="full">
                     <Row>
@@ -28,11 +28,11 @@ const Westernhead = () => {
                 </div>
                 <div className="full">
                     <Row>
-                        <Col xs={12} md={6} className='tpr-1' style={{ width: '66%', height: 'auto' }} >
+                        <Col xs={12} md={6} className='tpr-1' style={{ width: '50%', height: 'auto' }} >
                             <img alt='p2' className='twoColumnImage' src={require('../../pictures/NewHouses/Westernhead/5.jpg')} />
                         </Col>
-                        <Col xs={12} md={6} style={{ width: '34%,', height: 'auto' }} className='tpl-1'>
-                            <img alt='p2' className='twoColumnImage' style={{ display: 'flex', right: 0 }} src={require('../../pictures/NewHouses/Westernhead/13.jpg')} />
+                        <Col xs={12} md={6} style={{ width: '33%,', height: 'auto' }} className='tpl-1'>
+                            <img alt='p2' className='twoColumnImage' style={{ width: '33%,', display: 'flex', right: 0 }} src={require('../../pictures/NewHouses/Westernhead/13.jpg')} />
                         </Col>
                     </Row>
                 </div>
@@ -49,7 +49,7 @@ const Westernhead = () => {
                     </Row>
                 </div>
                 <div className="full">
-                    <img alt='p2' className='bigImages' src={require('../../pictures/NewHouses/Westernhead/11.png')}></img>
+                    <img alt='p2' className='plans' src={require('../../pictures/NewHouses/Westernhead/11.png')}></img>
                 </div>
                 <div className="full">
                     <Row>

@@ -20,7 +20,7 @@ const PezulaCliffs = () => {
                     </div>
                 </div>
                 <div className="full">
-                    <img alt='p2' className='bigImages' src={require('../../pictures/NewHouses/PezulaCliffs/2.png')}></img>
+                    <img alt='p2' className='plans' src={require('../../pictures/NewHouses/PezulaCliffs/2.png')}></img>
                 </div>
                 <div className="full">
                     <Row>
@@ -70,10 +70,10 @@ const PezulaCliffs = () => {
                     </div>
                 </div>
                 <div className="full">
-                    <img alt='p2' className='bigImages' src={require('../../pictures/NewHouses/PezulaCliffs/18.png')}></img>
+                    <img alt='p2' className='plans' src={require('../../pictures/NewHouses/PezulaCliffs/18.png')}></img>
                 </div>
                 <div className="full">
-                    <img alt='p2' className='bigImages' src={require('../../pictures/NewHouses/PezulaCliffs/19.png')}></img>
+                    <img alt='p2' className='plans' src={require('../../pictures/NewHouses/PezulaCliffs/19.png')}></img>
                 </div>
                 <br></br>
             </div>
