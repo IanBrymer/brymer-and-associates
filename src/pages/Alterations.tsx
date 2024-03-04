@@ -1,29 +1,38 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Col, Nav, Row } from 'react-bootstrap';
 import HouseCards from '../components/houseCards';
 import TypesNavbar from '../components/typesNavbar';
 import PageHeaders from '../components/pageHeaders';
+import LoadSpinner from '../components/loadSpinner';
 
 import '../App.css'
 const Alterations = () => {
+    const [isLoading, setIsLoading] = useState(true);
+    const handleImageLoad = async () => {
+        await delay(1500)
+        setIsLoading(false)
+    };
+
+    function delay(milliseconds: number) {
+        return new Promise((resolve) => setTimeout(resolve, milliseconds));
+    }
+
     return (
         <>
-            <div className="App">
+            <script type="module" src="https://cdn.jsdelivr.net/npm/ldrs/dist/auto/helix.js"></script>
+            < div className="App" >
                 <div className='OtherPageheader'>
                     <TypesNavbar></TypesNavbar>
-                    <PageHeaders fontSize='2rem' scaleOne='1' scaleTwo='1.5' backgroundFontSize='15rem' height='400px' backgroundHeader="Alterations" header='EXPLORE A FEW OF OUR Alterations'></PageHeaders>
+                    <PageHeaders fontSize='2rem' scaleOne='1' scaleTwo='1.5' backgroundFontSize='11rem' height='400px' backgroundHeader="ALTERATIONS" header='EXPLORE A FEW OF OUR ALTERATIONS'></PageHeaders>
                     <Row className='px-2' style={{ height: 'min-content', marginBottom: '20px', width: '95%' }}>
                         <Col >
-                            <p className='paragraphs'>Our portfolio of homes designed over the last 30 years is very diverse. We do not favour one architectural style over another and rather concentrate on delivering a well-designed house in our clients preferred style and budget. Although most of our work is concentrated in Knysna, Plettenberg Bay and the Garden Route area, we have completed commissions all over the country, as well as internationally where we have worked in Zimbabwe and Switzerland.</p>
-                        </Col>
-                        <Col>
-                            <p className='paragraphs'>The building environment is ever changing, with new products and systems entering the market daily. We spend a great deal of time evaluating these systems and discussing them with the suppliers to identify systems that will enhance, rather than hinder, our client’s lifestyle. We generally wait for systems to be tried and tested before recommending them. Buildings are becoming “greener” and more energy efficient and it is important to use modern systems to enhance the buildings efficiency, but this must be balanced against ease of use and fit into the desired lifestyle choices of our clients</p>
+                            <p style={{ textAlign: 'left' }} className='paragraphs'>Brymer and Associates has worked on more than 100 alteration and renovation projects over the years. Working on these projects is a passion of ours and we have developed a good understanding of the building and environmental conditions specific to each site and location.</p>
                         </Col>
                     </Row>
                 </div>
-            </div>
-            <div className='pb-5 pt-3'>
-                <Row className='w-100 d-flex justify-content-around'>
+            </div >
+            <div onLoad={handleImageLoad} className='pb-5 pt-3' style={{ margin: 'auto' }}>
+                <Row className='w-100 d-flex justify-content-around' style={{ maxWidth: '1440px', margin: 'auto' }}>
                     <Col>
                         <Nav.Link href='/alterations/ibis-island'>
                             <HouseCards paddingTop='35px' imageSrc='HouseCards/IbisIsland.jpg' houseName='Ibis Island' paragraph='The original house was extensively altered, upgraded and modernized to create flow by connecting the various living spaces and to take full advantage of the 360 degree views afforded to Island living.'></HouseCards>
@@ -52,6 +61,7 @@ const Alterations = () => {
                         </Nav.Link>
                     </Col>
                 </Row>
+                {isLoading && <LoadSpinner></LoadSpinner>}
             </div>
         </>
     );

@@ -1,4 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react';
+import LoadSpinner from '../../components/loadSpinner';
+
 import TypesNavbar from '../../components/typesNavbar';
 import PageHeaders from '../../components/pageHeaders';
 import '../../App.css'
@@ -6,6 +8,15 @@ import { Col, Row } from 'react-bootstrap';
 import BackTo from '../../components/backTo';
 
 const PezulaCliffs = () => {
+    const [isLoading, setIsLoading] = useState(true);
+    const handleImageLoad = async () => {
+        await delay(2000)
+        setIsLoading(false)
+    };
+
+    function delay(milliseconds: number) {
+        return new Promise((resolve) => setTimeout(resolve, milliseconds));
+    }
     return (
         <div className="App">
             <BackTo text='Back To New Houses' link='/new-houses'></BackTo>
@@ -13,7 +24,7 @@ const PezulaCliffs = () => {
                 <TypesNavbar></TypesNavbar>
                 <PageHeaders fontSize='5vw' scaleOne='1.5' scaleTwo='2.5' backgroundFontSize='7.5vw' height='19vw' backgroundHeader="PEZULA CLIFFS" header='PEZULA CLIFFS'></PageHeaders>
             </div>
-            <div className="container">
+            <div onLoad={handleImageLoad} className="container">
                 <div className="full">
                     <div className="image-box">
                         <img alt='p1' className='image-cropped-calc' src={require('../../pictures/NewHouses/PezulaCliffs/1.jpg')}></img>
@@ -76,6 +87,7 @@ const PezulaCliffs = () => {
                     <img alt='p2' className='plans' src={require('../../pictures/NewHouses/PezulaCliffs/19.png')}></img>
                 </div>
                 <br></br>
+                {isLoading && <LoadSpinner />}
             </div>
         </div>
     )

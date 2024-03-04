@@ -4,6 +4,7 @@ import { Container, Nav, Navbar } from 'react-bootstrap';
 const TypesNavbar = () => {
     return (
         <>
+            <div className='logo'><div className='logo2'>Brymer &<br></br>Associates</div></div>
             <Navbar expand="lg" className="bg-body-tertiary w-100 justify-content-center d-flex">
                 <Container className='w-50 '>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />

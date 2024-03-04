@@ -7,9 +7,9 @@ const HouseCards = (props: { imageSrc: string, houseName: string, paragraph: str
     const adjustedWidth = props.width || '28rem'; // Default to '28rem' if props.width is empty
 
     return (
-        <Col className='d-flex justify-content-center' style={{ paddingTop: props.paddingTop }}>
+        <Col loading='lazy' className='d-flex justify-content-center' style={{ paddingTop: props.paddingTop }}>
             <Card style={{ width: adjustedWidth, height: 'min-content', borderRadius: '0 0 0 0' }}>
-                <Card.Img style={{ overflow: 'hidden', borderRadius: '0 0 0 0' }} variant="top" src={require(`../pictures/${props.imageSrc}`)} />
+                <Card.Img loading='lazy' style={{ overflow: 'hidden', borderRadius: '0 0 0 0' }} variant="top" src={require(`../pictures/${props.imageSrc}`)} />
                 <Card.Body style={{ backgroundColor: '#E4ECF5' }}>
                     <Card.Title className='houseCardHeadings'>{props.houseName}</Card.Title>
                     <Card.Text className='houseCardParagraphs'>

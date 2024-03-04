@@ -1,10 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react'
 import '../App.css'
 import { Col, Nav, Row } from 'react-bootstrap';
 import HouseCards from '../components/houseCards';
 import TypesNavbar from '../components/typesNavbar';
 import PageHeaders from '../components/pageHeaders';
+import LoadSpinner from '../components/loadSpinner';
 const Small = () => {
+    const [isLoading, setIsLoading] = useState(true);
+    const handleImageLoad = async () => {
+        await delay(2000)
+        setIsLoading(false)
+    };
+
+    function delay(milliseconds: number) {
+        return new Promise((resolve) => setTimeout(resolve, milliseconds));
+    }
     return (
         <>
             <div className="App">
@@ -18,7 +28,7 @@ const Small = () => {
                     </Row>
                 </div>
             </div>
-            <div className='pb-5 pt-3'>
+            <div onLoad={handleImageLoad} className='pb-5 pt-3'>
                 <Row className='w-100 d-flex justify-content-around'>
                     <Col>
                         <Nav.Link href='/small/osc-pavillion'>
@@ -43,6 +53,7 @@ const Small = () => {
                         </Nav.Link>
                     </Col>
                 </Row>
+                {isLoading && <LoadSpinner />}
             </div>
         </>
     );

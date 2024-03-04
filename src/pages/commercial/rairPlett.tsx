@@ -1,4 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react';
+import LoadSpinner from '../../components/loadSpinner';
+
 import TypesNavbar from '../../components/typesNavbar';
 import PageHeaders from '../../components/pageHeaders';
 import '../../App.css'
@@ -8,6 +10,15 @@ import BackTo from '../../components/backTo';
 //src\pictures\Commercial\RairPlett\1.jpg
 
 const RairPlett = () => {
+    const [isLoading, setIsLoading] = useState(true);
+    const handleImageLoad = async () => {
+        await delay(2000)
+        setIsLoading(false)
+    };
+
+    function delay(milliseconds: number) {
+        return new Promise((resolve) => setTimeout(resolve, milliseconds));
+    }
     return (
         <div className="App">
             <BackTo text='Back To Commercial' link='/commercial'></BackTo>
@@ -15,7 +26,7 @@ const RairPlett = () => {
                 <TypesNavbar></TypesNavbar>
                 <PageHeaders fontSize='4vw' scaleOne='3' scaleTwo='4' backgroundFontSize='5vw' height='20vw' backgroundHeader="RAIR PLETT" header='RAIR PLETT'></PageHeaders>
             </div>
-            <div className="container">
+            <div onLoad={handleImageLoad} className="container">
                 <div className="full">
                     <img alt='p1' className='bigImages' src={require('../../pictures/Commercial/RairPlett/1.jpg')}></img>
                 </div>
@@ -48,6 +59,7 @@ const RairPlett = () => {
                     <img alt='p2' className='plans' src={require('../../pictures/Commercial/RairPlett/9.png')}></img>
                 </div>
                 <br></br>
+                {isLoading && <LoadSpinner />}
             </div>
         </div>
     )

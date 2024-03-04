@@ -1,4 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react';
+import LoadSpinner from '../../components/loadSpinner';
+
 import TypesNavbar from '../../components/typesNavbar';
 import PageHeaders from '../../components/pageHeaders';
 import '../../App.css'
@@ -6,6 +8,15 @@ import { Col, Row } from 'react-bootstrap';
 import BackTo from '../../components/backTo';
 
 const PezulaHills = () => {
+    const [isLoading, setIsLoading] = useState(true);
+    const handleImageLoad = async () => {
+        await delay(2000)
+        setIsLoading(false)
+    };
+
+    function delay(milliseconds: number) {
+        return new Promise((resolve) => setTimeout(resolve, milliseconds));
+    }
     return (
         <div className="App">
             <BackTo text='Back To New Houses' link='/new-houses'></BackTo>
@@ -50,6 +61,7 @@ const PezulaHills = () => {
                     <Col className='p-1'><img alt='p2' className='twoColumnImage' src={require('../../pictures/NewHouses/PezulaHills/p13.png')}></img></Col>
                 </Row>
             </div>
+            {isLoading && <LoadSpinner></LoadSpinner>}
         </div>
     )
 }

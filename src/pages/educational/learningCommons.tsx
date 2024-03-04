@@ -1,4 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react';
+import LoadSpinner from '../../components/loadSpinner';
+
 import TypesNavbar from '../../components/typesNavbar';
 import PageHeaders from '../../components/pageHeaders';
 import '../../App.css'
@@ -6,6 +8,15 @@ import { Col, Row } from 'react-bootstrap';
 import BackTo from '../../components/backTo';
 
 const LearningCommons = () => {
+    const [isLoading, setIsLoading] = useState(true);
+    const handleImageLoad = async () => {
+        await delay(2000)
+        setIsLoading(false)
+    };
+
+    function delay(milliseconds: number) {
+        return new Promise((resolve) => setTimeout(resolve, milliseconds));
+    }
     return (
         <div className="App">
             <BackTo text='Back To Educational Builds' link='/educational'></BackTo>
@@ -13,7 +24,7 @@ const LearningCommons = () => {
                 <TypesNavbar></TypesNavbar>
                 <PageHeaders fontSize='3vw' scaleOne='0.92' scaleTwo='3.5' backgroundFontSize='6vw' height='19vw' backgroundHeader="OAKHILL LEARNING COMMONS" header='OAKHILL LEARNING COMMONS'></PageHeaders>
             </div>
-            <div className="container">
+            <div onLoad={handleImageLoad} className="container">
                 <div className="full">
                     <img alt='p2' className='bigImages' src={require('../../pictures/Educational/OakhillLearningCommons/1.jpg')}></img>
                 </div>
@@ -39,6 +50,7 @@ const LearningCommons = () => {
                     <img alt='p2' className='plans' src={require('../../pictures/Educational/OakhillLearningCommons/8.png')}></img>
                 </div>
                 <br></br>
+                {isLoading && <LoadSpinner />}
             </div>
         </div>
     )

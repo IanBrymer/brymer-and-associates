@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react'
 import logo from './logo.svg';
 import '../styles/Home.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -9,8 +9,18 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Footer from '../components/footer';
 import DefaultNavbar from '../components/navbar';
+import LoadSpinner from '../components/loadSpinner';
 
 const Home = () => {
+    const [isLoading, setIsLoading] = useState(true);
+    const handleImageLoad = async () => {
+        await delay(2000)
+        setIsLoading(false)
+    };
+
+    function delay(milliseconds: number) {
+        return new Promise((resolve) => setTimeout(resolve, milliseconds));
+    }
     return (
         <div className="App">
             <DefaultNavbar></DefaultNavbar>

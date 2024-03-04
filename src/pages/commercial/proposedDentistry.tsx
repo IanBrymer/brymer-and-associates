@@ -1,4 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react';
+import LoadSpinner from '../../components/loadSpinner';
+
 import TypesNavbar from '../../components/typesNavbar';
 import PageHeaders from '../../components/pageHeaders';
 import '../../App.css'
@@ -8,6 +10,15 @@ import BackTo from '../../components/backTo';
 //src\pictures\Commercial\ProposedDentistry\1.jpg
 
 const ProposedDentistry = () => {
+    const [isLoading, setIsLoading] = useState(true);
+    const handleImageLoad = async () => {
+        await delay(2000)
+        setIsLoading(false)
+    };
+
+    function delay(milliseconds: number) {
+        return new Promise((resolve) => setTimeout(resolve, milliseconds));
+    }
     return (
         <div className="App">
             <BackTo text='Back To Commercial' link='/commercial'></BackTo>
@@ -15,7 +26,7 @@ const ProposedDentistry = () => {
                 <TypesNavbar></TypesNavbar>
                 <PageHeaders fontSize='4vw' scaleOne='1.5' scaleTwo='4' backgroundFontSize='5vw' height='20vw' backgroundHeader="PROPOSED DENTISTRY" header='PROPOSED DENTISTRY'></PageHeaders>
             </div>
-            <div className="container">
+            <div onLoad={handleImageLoad} className="container">
                 <div className="full">
                     <img alt='p1' className='bigImages' src={require('../../pictures/Commercial/Dentistry/1.png')}></img>
                 </div>
@@ -29,6 +40,7 @@ const ProposedDentistry = () => {
                     </Row>
                 </div>
                 <br></br>
+                {isLoading && <LoadSpinner />}
             </div>
         </div>
     )

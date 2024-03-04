@@ -1,4 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react';
+import LoadSpinner from '../../components/loadSpinner';
+
 import TypesNavbar from '../../components/typesNavbar';
 import PageHeaders from '../../components/pageHeaders';
 import '../../App.css'
@@ -6,6 +8,15 @@ import { Col, Row } from 'react-bootstrap';
 import BackTo from '../../components/backTo';
 
 const Somerset = () => {
+    const [isLoading, setIsLoading] = useState(true);
+    const handleImageLoad = async () => {
+        await delay(2000)
+        setIsLoading(false)
+    };
+
+    function delay(milliseconds: number) {
+        return new Promise((resolve) => setTimeout(resolve, milliseconds));
+    }
     return (
         <div className="App">
             <BackTo text='Back To New Houses' link='/new-houses'></BackTo>
@@ -13,7 +24,7 @@ const Somerset = () => {
                 <TypesNavbar></TypesNavbar>
                 <PageHeaders fontSize='5vw' scaleOne='1.5' scaleTwo='2.5' backgroundFontSize='6.2vw' height='19vw' backgroundHeader="SOMERSET HOUSE" header='SOMERSET HOUSE'></PageHeaders>
             </div>
-            <div className="container">
+            <div onLoad={handleImageLoad} className="container">
                 <div className="full">
                     <img alt='p1' className='bigImages' src={require('../../pictures/NewHouses/Somerset/1.jpg')}></img>
                 </div>
@@ -69,6 +80,7 @@ const Somerset = () => {
                     <img alt='p2' className='plans' src={require('../../pictures/NewHouses/Somerset/16.png')}></img>
                 </div>
                 <br></br>
+                {isLoading && <LoadSpinner />}
             </div>
         </div>
     )
