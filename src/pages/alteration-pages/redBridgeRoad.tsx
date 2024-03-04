@@ -11,7 +11,7 @@ const RedBridgeRoad = () => {
             <BackTo text='Back To Alterations' link='/alterations'></BackTo>
             <div className='OtherPageheader'>
                 <TypesNavbar></TypesNavbar>
-                <PageHeaders fontSize='4vw' scaleOne='1.5' scaleTwo='4.5' backgroundFontSize='6vw' height='19vw' backgroundHeader="RED BRIDGE ROAD" header='RED BRIDGE ROAD'></PageHeaders>
+                <PageHeaders fontSize='4vw' scaleOne='1.5' scaleTwo='4.0' backgroundFontSize='6vw' height='19vw' backgroundHeader="RED BRIDGE ROAD" header='RED BRIDGE ROAD'></PageHeaders>
             </div>
             <div className="container">
                 <div className="full">
