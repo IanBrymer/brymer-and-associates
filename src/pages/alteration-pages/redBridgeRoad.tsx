@@ -4,7 +4,6 @@ import LoadSpinner from '../../components/loadSpinner';
 import TypesNavbar from '../../components/typesNavbar';
 import PageHeaders from '../../components/pageHeaders';
 import '../../App.css'
-import { Col, Row } from 'react-bootstrap';
 import BackTo from '../../components/backTo';
 
 const RedBridgeRoad = () => {
